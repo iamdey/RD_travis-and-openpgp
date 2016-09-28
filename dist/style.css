@@ -1,0 +1,21 @@
+body {
+  font-family: sans-serif;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid gray;
+}
+
+.alert {
+  color: red;
+}
+
+.code {
+  display: block;
+  font-family: monospace
+  color: #333;
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  background-color: #eee;
+}
