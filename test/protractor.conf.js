@@ -1,5 +1,4 @@
 const SpecReporter = require('jasmine-spec-reporter');
-const isTestEnv = process.env.NODE_ENV === 'test';
 
 exports.config = {
   capabilities: {
@@ -12,7 +11,7 @@ exports.config = {
     showColors: true,
     print: () => {},
   },
-  baseUrl: isTestEnv ? 'http://localhost:4200' : 'http://localhost:4000/app/',
+  baseUrl: 'http://localhost:4200',
   onPrepare: () => {
     jasmine.getEnv().addReporter(new SpecReporter({
       displayStacktrace: 'specs',
